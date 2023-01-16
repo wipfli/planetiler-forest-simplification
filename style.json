@@ -1,0 +1,23 @@
+{
+    "version": 8,
+    "name": "planetiler forest simplification",
+    "sources": {
+      "planetiler-forest-simplification":{
+        "type": "vector",
+        "tiles": ["pmtiles://data/planetiler-forest-simplification.pmtiles/{z}/{x}/{y}"],
+        "maxzoom": 14
+      }
+    },
+    "layers": [
+      {
+        "id": "highway",
+        "type": "fill",
+        "source": "planetiler-forest-simplification",
+        "source-layer": "wood",
+        "paint": {
+          "fill-color": "#c6f2df"
+        }
+      }
+    ],
+    "id": "planetiler-forest-simplification"
+  }
